@@ -1,7 +1,7 @@
----
+===
 title:      The Long Bench By The Lake
 write-date: 2016-05-20
----
+===
 
 I like the long bench by the lake,
 as I like any other benches we have sat.

@@ -1,7 +1,7 @@
----
+===
 title:      Lone Library
 write-date: 2016-11-30
----
+===
 
 Dreaded light,
 dotted sky,

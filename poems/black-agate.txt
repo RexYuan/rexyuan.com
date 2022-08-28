@@ -1,7 +1,7 @@
----
+===
 title:      Black Agate
 write-date: 2016-04-14
----
+===
 
 On the midnight train I ponder
 our relationship.

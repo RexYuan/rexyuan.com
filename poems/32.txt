@@ -1,7 +1,7 @@
----
+===
 title:      32
 write-date: 2016-06-23
----
+===
 
 Without cumbrance, only remembrance,
 we walk onwards, freely into the future,
