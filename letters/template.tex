@@ -24,6 +24,7 @@
 	parskip=half, % Vertical whitespace between paragraphs
 	%foldmarks=hp, % Uncomment to remove fold marks on the left side of the first page
 	enlargefirstpage=true, % Allow more text on the first page
+	% backaddress=off
 ]{scrlttr2} % Use the KOMA-Script letter class
 
 \usepackage{fontsize} % Allows changing the default font size to an arbitrary value
@@ -48,27 +49,31 @@
 
 \usepackage{fontawesome5} % Allows the use of Font Awesome icons
 
+\usepackage{datetime}
+\usepackage{hyperref}
+
 %----------------------------------------------------------------------------------------
 %	COVER LETTER INFORMATION
 %----------------------------------------------------------------------------------------
 
-\setkomavar{fromname}{Dr. John Dorian} % Your name
-\setkomavar{signature}{Dr. John Dorian, M.D.} % Your name as you want it to appear in the signature
+\setkomavar{fromname}{Chih-cheng Rex Yuan} % Your name
+\setkomavar{signature}{Rex Yuan} % Your name as you want it to appear in the signature
 
-\newkomavar{subtitle}\setkomavar{subtitle}{Graduate Medical Student} % Set the subtitle line for the first page header, leave empty for no subtitle
+\newkomavar{subtitle}\setkomavar{subtitle}{Research Assistant} % Set the subtitle line for the first page header, leave empty for no subtitle
 
-\setkomavar{fromaddress}{5384 N Broadway Ave\\ Trotwood, Ohio 45426} % Your address or location
-\setkomavar{fromphone}{+1 (937) 837-1234} % Your phone number
-\setkomavar{fromemail}{john@latextemplates.com} % Your email address
+\setkomavar{fromaddress}{chihchengyuan@gmail.com} % Your address or location
+% \setkomavar{fromphone}{+1 (937) 837-1234} % Your phone number
+\setkomavar{fromemail}{chihchengyuan@gmail.com} % Your email address
 
-\setkomavar{place}{} % A city or country that's output before the date automatically, add your location here if you want this
-\setkomavar{date}{\today} % Date output above the letter, use \today for today's date or leave this empty for no date
+\setkomavar{place}{Taipei, Taiwan} % A city or country that's output before the date automatically, add your location here if you want this
+\newdate{date}{18}{05}{2023}
+\setkomavar{date}{\displaydate{date}} % Date output above the letter, use \today for today's date or leave this empty for no date
 
-\setkomavar{subject}{Cover Letter for Residency Position} % Bold text above the letter specifying what it's for, useful for specifying the job you are applying for. Leave this empty for no subject.
+\setkomavar{subject}{Cover Letter for Community Manager position} % Bold text above the letter specifying what it's for, useful for specifying the job you are applying for. Leave this empty for no subject.
 
 % These are not used in this document, uncomment them if you would like to use them and output their values with e.g.: \usekomavar{fromurl}
 %\setkomavar{fromfax}{+1 (123) 456 7890} % Your fax number
-%\setkomavar{fromurl}{https://www.LaTeXTemplates.com} % Your personal website
+\setkomavar{fromurl}{\href{https://rexyuan.com}{rexyuan.com}} % Your personal website
 
 %------------------------------------------------
 
@@ -84,8 +89,11 @@
 
 \setkomavar{firstfoot}{ % Style the first page footer
 	\centering\scshape\lsstyle% Text position and styling
-	{\renewcommand{\\}{~{\large\textperiodcentered}~}\usekomavar{fromaddress}}\\ % Output the from address where separate lines are replaced with bullet points
-	{\small{\footnotesize\faEnvelope}\hspace{4pt}\usekomavar{fromemail}\hspace{8pt}{\footnotesize\faMobile*}\hspace{4pt}\usekomavar{fromphone}} % Output the email address and phone number, if you want your fax number or website URL showing, add them here in a similar way
+	{\renewcommand{\\}{~{\large\textperiodcentered}~}\usekomavar{fromurl}}\\ % Output the from address where separate lines are replaced with bullet points
+	{\small
+	% {\footnotesize\faEnvelope}\hspace{4pt}\usekomavar{fromemail}\hspace{8pt}
+	% {\footnotesize\faMobile*}\hspace{4pt}\usekomavar{fromphone}
+	} % Output the email address and phone number, if you want your fax number or website URL showing, add them here in a similar way
 }
 
 \setplength{firstfootvpos}{0.92\paperheight} % Vertical position of the footer on the first page
@@ -100,14 +108,11 @@
 
 \begin{letter}{
 	% Name and address of the person to whom the letter is being sent
-	Dr. Robert Kelso \\
-	Chief of Medicine \\
-	Sacred Heart Hospital \\
-	12629 Riverside Drive \\
-	North Hollywood, L.A. 91607
+	Ana Gabela \\
+	angabela@gmail.com
 }
 
-\opening{Dear Dr. Kelso,}
+\opening{Dear Ana Gabela,}
 
 PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening.
 
