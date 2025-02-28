@@ -1,3 +1,3 @@
 
 all:
-	tree -H . > index.html
+	tree -H 'https://rexyuan.com/images/' -o index.html
