@@ -1,0 +1,53 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\name{Chih-cheng Rex Yuan}
+\address{chihchengyuan@gmail.com \quad\addressSep\quad \href[pdfnewwindow=true]{https://github.com/RexYuan}{github.com/RexYuan} \quad\addressSep\quad \href[pdfnewwindow=true]{https://www.linkedin.com/in/rexyuan/}{linkedin.com/in/rexyuan}}
+
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+{\bf National Taiwan Normal University} \hfill {Sep 2014 - Jun 2019} \\
+{\em Bachelor of Engineering in Computer Science and Information Engineering} \\
+$\cdot$ Academic Excellence Award (Jan 2016): Ranked top 5\% in the class.
+
+\end{rSection}
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei, Taiwan}{Research Assistant}{May 2023 - Present}
+\item Published an AI fairness auditing framework and open-source tool supporting 15 statistical metrics, which systematically confirmed racial bias in the COMPAS dataset as reported by ProPublica in 2016. The paper appeared in 2024 PNC as ''Ensuring Fairness with Transparent Auditing of Quantitative Bias in AI Systems''.
+\item Proposed a privacy-preserving AI fairness auditing framework using differentially private synthetic data, evaluated across 5 machine learning models and 3 real-world datasets, demonstrating consistent bias detection while mitigating privacy risks. The paper is in the review process.
+\end{rSubsection}
+
+\begin{rSubsection}{SiFive}{Hsinchu, Taiwan}{Hardware Engineer}{Sep 2022 - Apr 2023}
+\item Acted as the code owner of the assertion-based verification monitors of a bus communication protocol in Chisel/Scala in a company's flagship product. Verification is an integral process for hardware design company to prevent costly bugs.
+\item Developed regression automation tools for FPGA system validation in Bash and Perl, streamlining the continuous integration validation process. This improvement was key to ensuring a project was delivered on time during the high-pressure final sprint.
+\end{rSubsection}
+
+\begin{rSubsection}{Formal Land}{Remote}{Formal Verification Engineer}{Jun 2022 - Aug 2022}
+\item Developed formal specifications and conducted verification of the OCaml implementation of Tezos' Jakarta economic protocol using Coq, enhancing protocol reliability and correctness assurance in blockchain smart contract environments.
+\end{rSubsection}
+
+\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei, Taiwan}{Research Assistant}{Jan 2017 - Jun 2022}
+\item Developed a hardware model checking algorithm based on Boolean learning and interpolation solving about 400 out of 747 instances in HWMCC10 benchmark. For comparison, the decade-old, state-of-the-art Berkeley tool solves about 600 instances on the same hardware.
+\item Designed a SAT-based solution for Message Sequence Chart synthesis by reducing the NP-complete Poset Cover Problem, capable of handling inputs with up to 100 linearizations and 10 elements.
+\item Proved the NP-hardness of k-anonymity Checking Problem and developed a randomized algorithm thereof for the 2010 Taiwanese Population And Housing Census data that revealed a minimum quasi-identifier of size 35.
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Activities}
+
+\begin{rSubsection}{CourseNTNU}{Taipei, Taiwan}{Creator}{Dec 2014 - Dec 2015}
+\item Developed a crawler of school course registration system by reverse-engineering the API calls.
+\item Built a course rating website in PHP that had about 2000 users and about 168700 pageviews.
+\end{rSubsection}
+
+\end{rSection}
+
+\end{document}

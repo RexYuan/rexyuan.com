@@ -1,110 +1,53 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 
-\name{Chih-cheng Rex Yuan} % Your name
-%\address{123 Broadway \\ City, State 12345} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{hello@rexyuan.com} % Your phone number and email
+\name{Chih-cheng Rex Yuan}
+
+\renewcommand{\nameskip}{\vspace{-1em}}  % adjust -1em as needed
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
 \begin{rSection}{Education}
 
-{\bf National Taiwan Normal University} \hfill {2014 - 2019} \\
-{\em B.S. in Computer Science and Information Engineering} \\
-{\bf FLOLAC Summer School at National Taiwan University} \hfill {2017, 2018, 2019} \\
-{\bf CONFESTA Summer School at University of Chinese Academy of Sciences} \hfill {2018}
+{\bf National Taiwan Normal University} \hfill {Sep 2014 - Jun 2019} \\
+{\em Bachelor of Engineering in Computer Science and Information Engineering} \\
+$\cdot$ Academic Excellence Award (Jan 2016): Ranked top 5\% in the class.
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei}{Research Assistant}{2023 - }
-\item Generative AI research: program synthesis experiments with ChatGPT and Frama-C.
-\item AI fairness research: development of an AI auditing framework.
+\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei, Taiwan}{Research Assistant}{May 2023 - Present}
+\item Published an AI fairness auditing framework and open-source tool supporting 15 statistical metrics, which systematically confirmed racial bias in the COMPAS dataset as reported by ProPublica in 2016. The paper appeared in 2024 PNC as ``Ensuring Fairness with Transparent Auditing of Quantitative Bias in AI Systems''.
+\item Proposed a privacy-preserving AI fairness auditing framework using differentially private synthetic data, evaluated across 5 machine learning models and 3 real-world datasets, demonstrating consistent bias detection while mitigating privacy risks. The paper is in the review process.
 \end{rSubsection}
 
-\begin{rSubsection}{The News Lens}{Taipei}{Software Engineer}{2023}
-\item Website development in JavaScript with Next.js.
-\item LLM integration with LangChain.
+\begin{rSubsection}{SiFive}{Hsinchu, Taiwan}{Hardware Engineer}{Sep 2022 - Apr 2023}
+\item Acted as the code owner of the assertion-based verification monitors of a bus communication protocol in Chisel/Scala, improving verification coverage by approximately 12\% in the company's flagship product. This contribution strengthened the hardware verification process, a critical step in preventing costly design bugs.
+\item Developed regression automation tools for FPGA system validation in Bash and Perl, streamlining the validation process and reducing overnight continuous integration time by about 18\%. This improvement was key in ensuring on-time project delivery during a high-pressure final sprint.
 \end{rSubsection}
 
-\begin{rSubsection}{SiFive}{Hsinchu}{Hardware Engineer}{2022 - 2023}
-\item Maintenance of assertion-based verification monitors of the cache communication protocol TileLink2 in Chisel of Scala.
-\item Development of regression automation tools for system validation in Bash and Perl.
-\end{rSubsection}
-
-\begin{rSubsection}{Formal Land}{Paris}{Software Engineer}{2022}
-\item Formal verification of the OCaml codebase of Tezos economic protocol Jakarta in Coq.
-\end{rSubsection}
-
-\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei}{Research Assistant}{2019 - 2022}
-\item Developed bit-level hardware verification safety algorithm based on algorithmic boolean learning and
-its implementation which solves about 300 of 747 instances in HWMCC10 benchmark.
-Optimized implementation with improved algorithm which combines learning and interpolation method solves about 400 instances.
-\item AIG input parser, solver interface, program data structures, profiling and logging,
-memory arena, and backend algorithm engines are independently implemented in C++ with minisat.
-\end{rSubsection}
-
-\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei}{Adjunct Research Assistant}{2017 - 2019}
-\item SAT-solving non-trivial reduction of Poset Cover Problem for Message Sequence Chart synthesis implemented in Python with z3.
-\item NP-hardness of k-anonymity Checking Problem and a randomized algorithm thereof for the 2010 Taiwanese Population And Housing Census data implemented in Python with MySQL.
+\begin{rSubsection}{Institute of Information Science, Academia Sinica}{Taipei, Taiwan}{Research Assistant}{Jan 2017 - Jun 2022}
+\item Developed a hardware model checking algorithm based on Boolean learning and interpolation solving about 400 out of 747 instances in HWMCC10 benchmark. For comparison, the decade-old, state-of-the-art Berkeley tool solves about 600 instances on the same hardware.
+\item Designed a scalable SAT-based solution for Message Sequence Chart synthesis by reducing the NP-complete Poset Cover Problem, efficiently handling inputs with up to 100 linearizations and 10 elements.
+\item Proved the NP-hardness of k-anonymity Checking Problem and developed a randomized algorithm thereof for the 2010 Taiwanese Population And Housing Census data that revealed a minimum quasi-identifier of size 35 that identifies 37.7\% of the database.
 \end{rSubsection}
 
 \end{rSection}
 
-\begin{rSection}{Publication}
+\begin{rSection}{Activities}
 
-{\bf Ensuring Fairness with Transparent Auditing of Quantitative Bias in AI Systems} \hfill {2024} \\
-{\em IEEE 2024 Pacific Neighborhood Consortium Annual Conference and Joint Meetings (PNC)}
+\begin{rSubsection}{Computer and Information Club}{Taipei, Taiwan}{Vice President}{Sep 2017 - Jun 2018}
+\item Worked closely with 5 other club staff members to co-organize joint workshops with the Electronics Club on Arduino programming, attended by approximately 30 students.
+\item Delivered hands-on courses on chatbot programming using Facebook and Line API to a group of 10 students.
+\end{rSubsection}
+
+\begin{rSubsection}{CourseNTNU}{Taipei, Taiwan}{Creator}{Dec 2014 - Dec 2015}
+\item Developed a crawler of school course registration system by reverse-engineering the API calls.
+\item Built a course rating website using PHP and jQuery that attracted approximately 2,000 users and generated around     168,700 pageviews. Collaborated with 3 additional contributors who joined following the project's initial success.
+\end{rSubsection}
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
